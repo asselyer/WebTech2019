@@ -3,6 +3,6 @@ Yernazarova Assel
 <br>
 Abish Togzhan
 <br>
-Aruzhan Turgunbayeva
+Aruzhan Turganbayeva
 <br>
 Dagasheva Zhanerke 
