@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KitapQana</title>
+      <link rel="stylesheet" type="text/css" href="main.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css" rel="stylesheet">
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"></script>
+</head>
+<body>
+<header>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <a class="navbar-brand" href="#"><strong>KitapQana</strong></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./main.html">Личный кабинет</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Библиотека</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">О нас</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <i class="fas fa-user"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+              <a class="dropdown-item" href="#">Выход</a>
+              <a class="dropdown-item" href="#">Настройки</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+         <div class="view overlay">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.jpg" alt="Card image cap">
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <div class="card-body">
+            <a class="activator waves-effect waves-light mr-4"><i class="fas fa-share-alt"></i></a>
+            <h4 class="card-title">Профиль</h4>
+            <hr>
+            <a href="#!" class="black-text d-flex justify-content-end"><h5>Изменить <i class="fas fa-angle-double-right"></i></h5></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="row">
+          <h7 class="heading display-3">Мои книги</h7>
+          <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#fullHeightModalRight">
+            <i class="fas fa-magic mr-1"></i> Продать книгу
+          </button>
+        <div class="modal fade" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-full-height modal-left" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="md-form input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text md-addon" id="material-addon1">Название книги</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Укажите наименование" aria-label="Username" aria-describedby="material-addon1">
+                </div>
+                <div class="md-form input-group mb-4">
+                  <input type="text" class="form-control" placeholder="Укажите автора" aria-label="Recipient's username" aria-describedby="material-addon2">
+                  <div class="input-group-append">
+                    <span class="input-group-text md-addon" id="material-addon2">Имя автора</span>
+                  </div>
+                </div>
+                <label class="mb-0 ml-2" for="material-url">Местоположение</label>
+                  <div class="md-form input-group mt-0 mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text md-addon" id="material-addon3">Город:</span>
+                    </div>
+                    <input type="text" class="form-control" id="material-url" aria-describedby="material-addon3">
+                  </div>
+                  <div class="md-form input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text md-addon">$</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <div class="input-group-append">
+                      <span class="input-group-text md-addon">.00</span>
+                    </div>
+                  </div>
+                  <div class="md-form input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text md-addon">Описание</span>
+                    </div>
+                    <textarea class="md-textarea form-control" aria-label="With textarea"></textarea>
+                  </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                  <button type="button" class="btn btn-primary">Вывести на продажу</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-deck">
+          <div class="card mb-4">
+            <div class="view overlay">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+              <a href="#!">
+               <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Название книги</h4>
+              <i class="fas fa-star blue-text"> </i>
+              <i class="fas fa-star blue-text"> </i>
+              <i class="fas fa-star blue-text"> </i>
+              <i class="fas fa-star blue-text"> </i>
+              <i class="fas fa-star blue-text"> </i>
+              <div class="btn-group-vertical btn-group-sm" role="group" aria-label="Vertical button group">
+                <button type="button" class="btn btn-sm ml-0">Возвратить</button>
+                <button type="button" class="btn btn-sm">Владелец</button>
+                <div class="btn-group" role="group">
+                  <button id="btnGroupVerticalDrop1" type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Статус
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
+                    <a class="dropdown-item" href="#">Читаю</a>
+                    <a class="dropdown-item" href="#">Прочел</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="view overlay">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/14.jpg" alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Название книги</h4>  <div class="smo"><span>Моя книга</span>  <button type="button" class="btn btn-sm">Продать</button></div>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="view overlay">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg" alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Название книги</h4>
+              <i class="fas fa-star blue-text"> </i>
+              <i class="fas fa-star blue-text"> </i>
+              <i class="fas fa-star blue-text"> </i>
+              <i class="fas fa-star blue-text"> </i>
+              <i class="fas fa-star grey-text"> </i>
+              <div class="btn-group-vertical btn-group-sm" role="group" aria-label="Vertical button group">
+                <button type="button" class="btn btn-sm ml-0">Возвратить</button>
+                <button type="button" class="btn btn-sm">Владелец</button>
+                <div class="btn-group" role="group">
+                  <button id="btnGroupVerticalDrop1" type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Статус
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
+                    <a class="dropdown-item" href="#">Читаю</a>
+                    <a class="dropdown-item" href="#">Прочел</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="view overlay">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Название книги</h4>
+              <i class="fas fa-star blue-text"> </i>
+              <i class="fas fa-star blue-text"> </i>
+              <i class="fas fa-star blue-text"> </i>
+              <i class="fas fa-star blue-text"> </i>
+              <i class="fas fa-star grey-text"> </i>
+              <div class="btn-group-vertical btn-group-sm" role="group" aria-label="Vertical button group">
+                <button type="button" class="btn btn-sm ml-0">Возвратить</button>
+                <button type="button" class="btn btn-sm">Владелец</button>
+                <div class="btn-group" role="group">
+                  <button id="btnGroupVerticalDrop1" type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Статус
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
+                    <a class="dropdown-item" href="#">Читаю</a>
+                    <a class="dropdown-item" href="#">Прочел</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="view overlay">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" alt="Card image cap">
+              <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Название книги</h4>
+              <i class="fas fa-star blue-text"> </i>
+              <i class="fas fa-star blue-text"> </i>
+              <i class="fas fa-star blue-text"> </i>
+              <i class="fas fa-star blue-text"> </i>
+              <i class="fas fa-star grey-text"> </i>
+              <div class="btn-group-vertical btn-group-sm" role="group" aria-label="Vertical button group">
+                <button type="button" class="btn btn-sm ml-0">Возвратить</button>
+                <button type="button" class="btn btn-sm">Владелец</button>
+                <div class="btn-group" role="group">
+                  <button id="btnGroupVerticalDrop1" type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Статус
+                  </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
+                  <a class="dropdown-item" href="#">Читаю</a>
+                  <a class="dropdown-item" href="#">Прочел</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
